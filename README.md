@@ -7,3 +7,12 @@ uploading the codes of both software numpy and pandas
 A small Python script for practicing beginner NumPy concepts: creating arrays,
 indexing, checking array shape, doing arithmetic, and calculating summaries.
  
+
+
+ ## Run it
+
+Install NumPy, then run the script:
+
+```bash
+python -m pip install -r requirements.txt
+python numpy_basics.py
