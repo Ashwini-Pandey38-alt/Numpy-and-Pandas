@@ -1,0 +1,8 @@
+import pandas as pd
+
+
+def main():
+    # A Series is like a labeled list of values.
+    marks = pd.Series([85, 92, 78], name="Marks")
+    print("Marks Series:")
+    print(marks)
