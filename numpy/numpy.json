@@ -7,3 +7,10 @@ def main():
     print("1D array:", numbers)
     print("First item:", numbers[0])
     print("First three items:", numbers[:3])
+
+
+ # NumPy can also represent data in rows and columns.
+    scores = np.array([[80, 90, 85], [70, 88, 92]])
+    print("\n2D array:\n", scores)
+    print("Shape (rows, columns):", scores.shape)
+    print("Value in row 1, column 2:", scores[0, 1])
