@@ -14,3 +14,8 @@ def main():
     print("\n2D array:\n", scores)
     print("Shape (rows, columns):", scores.shape)
     print("Value in row 1, column 2:", scores[0, 1])
+
+
+# Arithmetic is applied to every item in the array.
+    print("\nNumbers plus 5:", numbers + 5)
+    print("Numbers multiplied by 2:", numbers * 2)
