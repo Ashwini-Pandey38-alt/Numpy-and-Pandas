@@ -6,3 +6,15 @@ def main():
     marks = pd.Series([85, 92, 78], name="Marks")
     print("Marks Series:")
     print(marks)
+
+ # A DataFrame stores data in named columns, like a simple table.
+    students = pd.DataFrame(
+        {
+            "Name": ["Asha", "Ravi", "Meera"],
+            "Subject": ["Math", "Math", "Science"],
+            "Marks": [85, 92, 78],
+        }
+    )
+
+    print("\nStudent table:")
+    print(students)
