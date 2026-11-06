@@ -18,3 +18,13 @@ def main():
 
     print("\nStudent table:")
     print(students)
+
+
+
+# Select a column and filter rows with a condition.
+    print("\nNames:")
+    print(students["Name"])
+
+    high_scores = students[students["Marks"] >= 80]
+    print("\nStudents with marks of 80 or more:")
+    print(high_scores)
