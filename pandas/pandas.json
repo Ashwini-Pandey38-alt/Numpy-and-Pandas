@@ -28,3 +28,11 @@ def main():
     high_scores = students[students["Marks"] >= 80]
     print("\nStudents with marks of 80 or more:")
     print(high_scores)
+
+
+ # Add a new column, then calculate a summary.
+    students["Passed"] = students["Marks"] >= 40
+    print("\nAverage marks:", students["Marks"].mean())
+    print("\nTable with Passed column:")
+    print(students)
+
