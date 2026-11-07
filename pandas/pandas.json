@@ -35,4 +35,22 @@ def main():
     print("\nAverage marks:", students["Marks"].mean())
     print("\nTable with Passed column:")
     print(students)
+# basic no.2
+import pandas as pd
 
+data = {
+    "Name": ["Asha", "Ravi", "Meera"],
+    "Marks": [80, 90, 75]
+}
+
+students = pd.DataFrame(data)
+
+print(students)
+
+print("Names:")
+print(students["Name"])
+
+print("Students with marks above 80:")
+print(students[students["Marks"] > 80])
+
+print("Average marks:", students["Marks"].mean())
