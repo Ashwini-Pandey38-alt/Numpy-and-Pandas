@@ -56,3 +56,33 @@ print(students[students["Marks"] > 80])
 print("Average marks:", students["Marks"].mean())
 
 
+import pandas as pd
+
+data = {
+    "Item": ["Lunch", "Bus", "Notebook", "Coffee", "Dinner"],
+    "Category": ["Food", "Travel", "Study", "Food", "Food"],
+    "Amount": [120, 40, 80, 60, 180]
+}
+
+expenses = pd.DataFrame(data)
+
+print("My expenses:")
+print(expenses)
+
+# Total and average expense
+print("\nTotal spent:", expenses["Amount"].sum())
+print("Average expense:", expenses["Amount"].mean())
+
+# Show only food expenses
+food_expenses = expenses[expenses["Category"] == "Food"]
+print("\nFood expenses:")
+print(food_expenses)
+
+# Add up expenses in each category
+print("\nTotal spent by category:")
+print(expenses.groupby("Category")["Amount"].sum())
+
+# Find the most expensive item
+biggest_expense = expenses.loc[expenses["Amount"].idxmax()]
+print("\nMost expensive item:")
+print(biggest_expense)
