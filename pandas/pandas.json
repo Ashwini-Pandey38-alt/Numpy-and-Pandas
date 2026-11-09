@@ -86,3 +86,28 @@ print(expenses.groupby("Category")["Amount"].sum())
 biggest_expense = expenses.loc[expenses["Amount"].idxmax()]
 print("\nMost expensive item:")
 print(biggest_expense)
+
+import pandas as pd
+
+books = pd.DataFrame({
+    "Book": ["Python Basics", "Math Guide", "English Stories", "Science Book"],
+    "Price": [300, 250, 180, 400],
+    "Quantity": [4, 10, 3, 6]
+})
+
+# Calculate the total value of each book's stock
+books["Stock Value"] = books["Price"] * books["Quantity"]
+
+print("Book shop inventory:")
+print(books)
+
+print("\nTotal value of all stock:")
+print(books["Stock Value"].sum())
+
+# Find books with fewer than 5 copies
+low_stock = books[books["Quantity"] < 5]
+print("\nBooks with low stock:")
+print(low_stock)
+
+print("\nBooks sorted by quantity:")
+print(books.sort_values("Quantity"))
