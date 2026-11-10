@@ -55,3 +55,28 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+import numpy as np
+
+books = np.array(["Python Basics", "Math Guide", "English Stories", "Science Book"])
+prices = np.array([300, 250, 180, 400])
+quantity = np.array([4, 10, 3, 6])
+
+# Calculate value of stock for each book
+stock_value = prices * quantity
+
+print("Book shop inventory:")
+
+for i in range(len(books)):
+    print(
+        books[i],
+        "- Price:", prices[i],
+        "- Quantity:", quantity[i],
+        "- Stock value:", stock_value[i]
+    )
+
+print("\nTotal value of all stock:", np.sum(stock_value))
+
