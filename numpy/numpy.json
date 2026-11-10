@@ -80,3 +80,7 @@ for i in range(len(books)):
 
 print("\nTotal value of all stock:", np.sum(stock_value))
 
+# Find books with fewer than 5 copies
+low_stock = quantity < 5
+print("\nBooks with low stock:")
+print(books[low_stock])
