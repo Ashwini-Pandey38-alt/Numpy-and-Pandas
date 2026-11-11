@@ -90,3 +90,18 @@ import numpy as np
 days = np.array(["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"])
 temperatures = np.array([30, 32, 31, 35, 36, 34, 33])
 
+print("Temperatures:", temperatures)
+print("Weekly average:", np.mean(temperatures), "C")
+
+hottest_day = days[np.argmax(temperatures)]
+coolest_day = days[np.argmin(temperatures)]
+
+print("Hottest day:", hottest_day)
+print("Coolest day:", coolest_day)
+
+print("Days above 33 C:")
+print(days[temperatures > 33])
+
+# Convert Celsius temperatures to Fahrenheit
+fahrenheit = temperatures * 9 / 5 + 32
+print("Temperatures in Fahrenheit:", fahrenheit)
