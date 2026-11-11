@@ -84,3 +84,9 @@ print("\nTotal value of all stock:", np.sum(stock_value))
 low_stock = quantity < 5
 print("\nBooks with low stock:")
 print(books[low_stock])
+
+import numpy as np
+
+days = np.array(["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"])
+temperatures = np.array([30, 32, 31, 35, 36, 34, 33])
+
