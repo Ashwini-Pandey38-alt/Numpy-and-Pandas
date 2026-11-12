@@ -114,3 +114,18 @@ import numpy as np
 categories = np.array(["Food", "Travel", "Shopping", "Bills"])
 budget = np.array([5000, 2000, 3000, 4000])
 spent = np.array([4200, 2300, 2500, 3900])
+
+
+
+remaining = budget - spent
+
+print("Monthly budget:")
+
+for i in range(len(categories)):
+    print(categories[i], "- Budget:", budget[i], "- Spent:", spent[i], "- Left:", remaining[i])
+
+print("\nTotal budget:", np.sum(budget))
+print("Total spent:", np.sum(spent))
+
+print("\nCategories over budget:")
+print(categories[spent > budget])
