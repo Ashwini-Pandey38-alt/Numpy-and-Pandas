@@ -129,3 +129,14 @@ print("Total spent:", np.sum(spent))
 
 print("\nCategories over budget:")
 print(categories[spent > budget])
+
+
+import numpy as np
+
+# Simulate 10 dice rolls. Dice values go from 1 to 6.
+rolls = np.random.randint(1, 7, size=10)
+
+print("Dice rolls:", rolls)
+print("Total:", np.sum(rolls))
+print("Average:", np.mean(rolls))
+
