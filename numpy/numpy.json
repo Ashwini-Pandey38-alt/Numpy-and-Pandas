@@ -140,3 +140,6 @@ print("Dice rolls:", rolls)
 print("Total:", np.sum(rolls))
 print("Average:", np.mean(rolls))
 
+#Count how many times we got a 6
+six_count = np.sum(rolls == 6)
+print("Number of sixes:", six_count)
