@@ -144,20 +144,3 @@ print("Average:", np.mean(rolls))
 six_count = np.sum(rolls == 6)
 print("Number of sixes:", six_count)
 
-
-import pandas as pd
-
-movies = pd.DataFrame({
-    "Movie": ["Movie A", "Movie B", "Movie C", "Movie D"],
-    "Genre": ["Action", "Comedy", "Action", "Comedy"],
-    "Rating": [8.2, 7.5, 9.0, 6.8]
-})
-
-print("All movies:")
-print(movies)
-
-# Show movies with a rating of 8 or more
-good_movies = movies[movies["Rating"] >= 8]
-print("\nMovies rated 8 or more:")
-print(good_movies)
-
