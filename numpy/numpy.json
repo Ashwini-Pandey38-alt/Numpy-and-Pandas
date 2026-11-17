@@ -144,3 +144,18 @@ print("Average:", np.mean(rolls))
 six_count = np.sum(rolls == 6)
 print("Number of sixes:", six_count)
 
+
+
+
+import pandas as pd
+
+attendance = pd.DataFrame({
+    "Name": ["Asha", "Ravi", "Meera", "Kabir"],
+    "Monday": ["Present", "Present", "Absent", "Present"],
+    "Tuesday": ["Present", "Absent", "Present", "Present"],
+    "Wednesday": ["Absent", "Present", "Present", "Absent"]
+})
+
+print("Attendance:")
+print(attendance)
+
