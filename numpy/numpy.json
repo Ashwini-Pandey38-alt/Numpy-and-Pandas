@@ -144,3 +144,10 @@ print("Average:", np.mean(rolls))
 six_count = np.sum(rolls == 6)
 print("Number of sixes:", six_count)
 
+ #Count the days each student was present
+days = ["Monday", "Tuesday", "Wednesday"]
+attendance["Days Present"] = (attendance[days] == "Present").sum(axis=1)
+
+print("\nDays present:")
+print(attendance[["Name", "Days Present"]])
+
