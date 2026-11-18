@@ -147,3 +147,16 @@ marks = pd.DataFrame({
     "Science": [88, 80, 86]
 })
 
+# Join the tables using the ID column
+result = pd.merge(students, marks, on="ID")
+
+result["Total"] = result["Math"] + result["Science"]
+result["Average"] = result["Total"] / 2
+
+print(result)
+
+top_student = result.loc[result["Average"].idxmax()]
+print("\nHighest average:")
+print(top_student["Name"], "-", top_student["Average"])
+
+
