@@ -151,3 +151,4 @@ attendance["Days Present"] = (attendance[days] == "Present").sum(axis=1)
 print("\nDays present:")
 print(attendance[["Name", "Days Present"]])
 
+

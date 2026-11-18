@@ -134,4 +134,16 @@ print("\nAverage rating:", movies["Rating"].mean())
 
 
 
+import pandas as pd
+
+students = pd.DataFrame({
+    "ID": [1, 2, 3],
+    "Name": ["Asha", "Ravi", "Meera"]
+})
+
+marks = pd.DataFrame({
+    "ID": [1, 2, 3],
+    "Math": [85, 72, 90],
+    "Science": [88, 80, 86]
+})
 
