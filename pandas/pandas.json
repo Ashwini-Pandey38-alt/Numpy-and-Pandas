@@ -160,3 +160,15 @@ print("\nHighest average:")
 print(top_student["Name"], "-", top_student["Average"])
 
 
+import pandas as pd
+
+teams = pd.DataFrame({
+    "Team": ["Lions", "Tigers", "Eagles", "Sharks"],
+    "Wins": [3, 2, 2, 1],
+    "Draws": [1, 2, 0, 1],
+    "Losses": [0, 0, 2, 2]
+})
+
+teams["Matches"] = teams["Wins"] + teams["Draws"] + teams["Losses"]
+teams["Points"] = teams["Wins"] * 3 + teams["Draws"]
+
