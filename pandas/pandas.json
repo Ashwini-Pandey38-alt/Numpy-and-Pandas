@@ -172,3 +172,8 @@ teams = pd.DataFrame({
 teams["Matches"] = teams["Wins"] + teams["Draws"] + teams["Losses"]
 teams["Points"] = teams["Wins"] * 3 + teams["Draws"]
 
+# Put the team with the most points first
+teams = teams.sort_values("Points", ascending=False)
+
+print("Football points table:")
+print(teams)
