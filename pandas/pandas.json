@@ -189,3 +189,12 @@ contacts = pd.DataFrame({
 print("Before cleaning:")
 print(contacts)
 
+# Remove extra spaces and make the text look consistent
+contacts["Name"] = contacts["Name"].str.strip().str.title()
+contacts["City"] = contacts["City"].str.strip().str.title()
+
+# Remove duplicate rows
+contacts = contacts.drop_duplicates()
+
+print("\nAfter cleaning:")
+print(contacts)
