@@ -177,3 +177,15 @@ teams = teams.sort_values("Points", ascending=False)
 
 print("Football points table:")
 print(teams)
+
+
+import pandas as pd
+
+contacts = pd.DataFrame({
+    "Name": [" asha ", "RAVI", "Meera ", "ASHA"],
+    "City": ["delhi", "Mumbai", "Pune", "Delhi"]
+})
+
+print("Before cleaning:")
+print(contacts)
+
