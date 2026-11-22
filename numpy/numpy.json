@@ -152,3 +152,15 @@ print("\nDays present:")
 print(attendance[["Name", "Days Present"]])
 
 
+import numpy as np
+
+# Each number represents one pixel's brightness
+image = np.array([
+    [50, 100, 150],
+    [80, 160, 200],
+    [30, 120, 240]
+])
+
+print("Original image:")
+print(image)
+
