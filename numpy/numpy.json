@@ -131,32 +131,3 @@ print("\nCategories over budget:")
 print(categories[spent > budget])
 
 
-import numpy as np
-
-# Simulate 10 dice rolls. Dice values go from 1 to 6.
-rolls = np.random.randint(1, 7, size=10)
-
-print("Dice rolls:", rolls)
-print("Total:", np.sum(rolls))
-print("Average:", np.mean(rolls))
-
-#Count how many times we got a 6
-six_count = np.sum(rolls == 6)
-print("Number of sixes:", six_count)
-
- #Count the days each student was present
-days = ["Monday", "Tuesday", "Wednesday"]
-attendance["Days Present"] = (attendance[days] == "Present").sum(axis=1)
-
-print("\nDays present:")
-print(attendance[["Name", "Days Present"]])
-
-
-import numpy as np
-
-items = np.array(["Bag", "Bottle", "Notebook", "Shoes"])
-price = np.array([800, 250, 100, 1200])
-quantity = np.array([1, 2, 3, 1])
-
-# Calculate each item's total
-total = price * quantity
