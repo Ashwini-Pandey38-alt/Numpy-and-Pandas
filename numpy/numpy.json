@@ -152,3 +152,11 @@ print("\nDays present:")
 print(attendance[["Name", "Days Present"]])
 
 
+import numpy as np
+
+items = np.array(["Bag", "Bottle", "Notebook", "Shoes"])
+price = np.array([800, 250, 100, 1200])
+quantity = np.array([1, 2, 3, 1])
+
+# Calculate each item's total
+total = price * quantity
