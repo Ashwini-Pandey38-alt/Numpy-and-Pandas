@@ -138,3 +138,12 @@ interest_rate = 0.05
 
 years = pd.Series([1, 2, 3, 4, 5], name="Year")
 
+# Calculate the amount after each year
+amounts = starting_amount * (1 + interest_rate) ** years
+
+savings = pd.DataFrame({
+    "Year": years,
+    "Amount": amounts.round(2)
+})
+
+print(savings)
