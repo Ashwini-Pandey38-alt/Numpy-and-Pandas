@@ -131,3 +131,10 @@ print("\nCategories over budget:")
 print(categories[spent > budget])
 
 
+import pandas as pd
+
+starting_amount = 1000
+interest_rate = 0.05
+
+years = pd.Series([1, 2, 3, 4, 5], name="Year")
+
