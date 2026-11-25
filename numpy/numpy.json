@@ -147,3 +147,16 @@ savings = pd.DataFrame({
 })
 
 print(savings)
+
+
+import pandas as pd
+
+people = pd.DataFrame({
+    "Name": ["Asha", "Ravi", "Meera", "Kabir"],
+    "Email": [
+        "asha@example.com",
+        "ravi@mail.com",
+        "meera@example.com",
+        "kabir@mail.com"
+    ]
+})
