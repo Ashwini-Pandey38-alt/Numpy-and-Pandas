@@ -160,3 +160,23 @@ people = pd.DataFrame({
         "kabir@mail.com"
     ]
 })
+
+import pandas as pd
+
+people = pd.DataFrame({
+    "Name": ["Asha", "Ravi", "Meera", "Kabir"],
+    "Email": [
+        "asha@example.com",
+        "ravi@mail.com",
+        "meera@example.com",
+        "kabir@mail.com"
+    ]
+})
+
+people["Provider"] = people["Email"].str.split("@").str[1]
+
+print("Email list:")
+print(people)
+
+print("\nNumber of emails by provider:")
+print(people["Provider"].value_counts())
