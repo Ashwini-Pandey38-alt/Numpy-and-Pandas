@@ -198,3 +198,13 @@ contacts = contacts.drop_duplicates()
 
 print("\nAfter cleaning:")
 print(contacts)
+
+
+
+import pandas as pd
+
+books = pd.DataFrame({
+    "Book": ["Python Basics", "Math Guide", "Story Book"],
+    "Total Pages": [200, 150, 120],
+    "Pages Read": [80, 150, 60]
+})
