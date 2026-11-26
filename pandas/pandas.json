@@ -208,3 +208,16 @@ books = pd.DataFrame({
     "Total Pages": [200, 150, 120],
     "Pages Read": [80, 150, 60]
 })
+
+books["Progress"] = (
+    books["Pages Read"] / books["Total Pages"] * 100
+).round(1)
+
+print("Reading progress:")
+print(books)
+
+print("\nAverage progress:", round(books["Progress"].mean(), 1), "%")
+
+completed = books[books["Progress"] == 100]
+print("\nCompleted books:")
+print(completed["Book"])
