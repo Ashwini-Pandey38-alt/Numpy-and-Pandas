@@ -221,3 +221,10 @@ print("\nAverage progress:", round(books["Progress"].mean(), 1), "%")
 completed = books[books["Progress"] == 100]
 print("\nCompleted books:")
 print(completed["Book"])
+
+
+import numpy as np
+
+runners = np.array(["Asha", "Ravi", "Meera", "Kabir"])
+times = np.array([14.2, 12.8, 13.5, 15.1])
+
