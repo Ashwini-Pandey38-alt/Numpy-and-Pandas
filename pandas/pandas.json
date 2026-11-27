@@ -228,3 +228,13 @@ import numpy as np
 runners = np.array(["Asha", "Ravi", "Meera", "Kabir"])
 times = np.array([14.2, 12.8, 13.5, 15.1])
 
+# Get the order from fastest time to slowest time
+order = np.argsort(times)
+
+print("Race results:")
+for position in range(len(order)):
+    runner_index = order[position]
+    print(position + 1, runners[runner_index], "-", times[runner_index], "seconds")
+
+fastest_index = np.argmin(times)
+print("\nFastest runner:", runners[fastest_index])
